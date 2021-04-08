@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+@font-face {
+      font-family: "anton";
+      src: url("fontes/anton.ttf");
+      }
+.anton-font{
+		font-family: "anton";  
+	}
+@font-face {
+	font-family: "oswald";
+	src: url("fontes/Oswald.ttf");
+}
+.oswald-font{
+	font-family: "oswald";
+} 
+	   
+html, body {
+	font-family: "oswald";
+    display: grid;
+    grid-gap: 0%;
+    padding: 0%;
+	margin: 0%;
+    background-color: aliceblue;
+}
+
+header{
+	grid-area: header;
+	padding-top: 0.95rem;
+}
+section{
+	margin-top: 3rem;
+	max-width: 100%;
+	-ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+article{ 
+	-ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+	position: relative;
+    padding-right: 0.95rem;
+    padding-left: 0.95rem;
+	color: #29251D;
+	margin: 0 auto;
+	padding: 1.25rem;
+}
+
+nav{ 
+	height: 3.25rem;
+	background-color: #29251D;
+	position: fixed;
+	border-bottom: 0.15rem solid #1AE8E5;
+	color: #ffffff;
+	display: block;
+	padding: 0.5rem 1rem;
+	margin-left: 0%;
+	margin-right: 0%;
+	top:0;
+	right:0;
+	left:0;
+	z-index:1030;
+
+}
+	
+nav ul{
+	padding-right: 1.875rem;
+	padding-top: 0.95rem;
+	margin: 0rem;
+	float: right;
+    background-color: #29251D;
+	list-style: none;
+	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+nav ul li { 
+	display: inline; 
+}
+
+nav ul li a {
+	background-color: #29251D;
+	float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding-right: 0.625rem;
+    text-decoration: none;
+	font-size: 1rem;
+}
+		
+nav ul li a.active{
+	color: #1AE8E5;
+}
+
+nav ul li a:hover {
+	color: #1AE8E5;
+	transition-duration: 1s;
+}
+
+.a-nav{
+	color: #f2f2f2;
+	float: left;
+	text-decoration: none;
+	padding: 0.125rem 0.625rem;
+	padding-right: 1.875rem;
+	padding-top: 0.938rem;
+	text-decoration: solid;
+	font-weight: bold;
+	font-size: larger;
+}
+
+footer{
+	margin-top: 6.25rem;
+	border-top: 0.15rem solid #1AE8E5;	
+	height: 5rem;
+	background-color: #29251D;
+	position: relative;
+	color: #ffffff;
+	display: block;
+	padding: 0.5rem 1rem;
+	margin-left: 0%;
+	margin-right: 0%;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:1030;
+}
+
+footer ul{
+	padding-right: 1.875rem;
+	padding-top: 0.938rem;
+	margin: 0rem;
+    background-color: #29251D;
+	list-style: none;
+	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+}
+
+footer ul li { 
+	display: inline;
+}
+
+footer a:hover {
+	color: #1AE8E5;
+	transition-duration: 1s;
+}
+
+footer a{
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+.a-fot{
+	float: right;
+	padding-top: 1.875rem;
+}
+
+.col-img{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	position: relative;
+	width: 100%;
+	padding-right: 0.95rem;
+	text-align: center;
+}
+
+.mt-1{
+	margin-top: .5rem
+}
+.mt-2{
+	margin-top: 1.5rem
+}
+.mt-3{
+	margin-top: 3rem
+}
+
+h1,h3,h4,h5{
+	margin-top: 0rem;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+    font-weight: 300
+}
+
+h1{
+	font-size: 2.5rem
+}
+h3{
+	font-size: 1.75rem
+}
+h4{
+	font-size: 1.5rem
+}
+h5{
+	font-size: 1.25rem
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+
+thead th{
+    color: #fff;
+    background-color: #29251D;
+    border: 0.15rem solid #1AE8E5;
+}
+
+table td, table th{
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	vertical-align: top;
+	text-align: center;
+	border-bottom: 0.15rem solid #1AE8E5;
+}
+
+
+
+figcaption {
+    background-color: #29251D;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+figure{
+	border: 0.15rem solid #29251D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
