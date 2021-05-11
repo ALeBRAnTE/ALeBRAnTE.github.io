@@ -27,7 +27,6 @@ nav ul.ul-menu{
     background-color: #29251D;
     position: relative;
     left: 0;
-    right: 0;
     top: 7rem;
     padding: 0.938rem;
     text-align: center;
@@ -107,8 +106,7 @@ label span:nth-child(3){
 
 .a-nav{
 	color: #f2f2f2;
-	right: 0;
-    margin-left: auto;
+    margin-right: auto;
 	text-decoration: none;
 	padding: 0.125rem 0.625rem;
 	padding-right: 1.875rem;

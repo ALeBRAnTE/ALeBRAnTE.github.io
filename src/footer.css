@@ -15,18 +15,13 @@ footer{
 	z-index:1030;
 }
 
-footer ul{
+footer div{
 	padding-right: 1.875rem;
-	padding-top: 0.938rem;
-	margin: 0rem;
+	padding-top: 0.35rem;
+	margin: 0;
     background-color: #29251D;
-	list-style: none;
 	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	text-align: center;
-}
-
-footer ul li { 
-	display: inline;
 }
 
 footer a:hover {
@@ -42,4 +37,18 @@ footer a{
 .a-fot{
 	float: right;
 	padding-top: 1.875rem;
+}
+
+@media(max-width: 768px) {
+    footer div{
+		padding-right: 1.5rem;
+		padding-top: 0rem;
+	}
+
+	.a-fot{
+		margin-left: auto;
+		right: 0;
+	}
+
+	
 }
