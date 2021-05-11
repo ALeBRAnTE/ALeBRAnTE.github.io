@@ -1,0 +1,103 @@
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 62.5rem;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -1.375rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.188rem 0.188rem 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.188rem 0 0 0.188rem;
+}
+
+.prev:hover, .next:hover {
+  background-color: #29251D;
+  color: #1AE8E5;
+}
+
+.texto {
+  color: #f2f2f2;
+  background-color: #29251D;
+  font-size: 0.938rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.num-img {
+  color: #f2f2f2;
+  background-color: #29251D;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 0.938rem;
+  width: 0.938rem;
+  margin: 0 0.125rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .4;
+    } 
+  to {
+      opacity: 1;
+    }
+}
+
+@keyframes fade {
+  from {
+      opacity: .4;
+    } 
+  to {
+      opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .prev, .next,.text {
+      font-size: 0.688rem;
+    }
+}

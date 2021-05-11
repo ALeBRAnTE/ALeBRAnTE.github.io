@@ -1,0 +1,135 @@
+nav{
+    background-color: #29251D;
+    display: flex;
+    padding: 0 0.938rem;
+    height: 4.25rem;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 0.15rem solid #1AE8E5;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #1AE8E5;
+	transition-duration: 1s;
+}
+
+nav ul.ul-menu{
+    background-color: #29251D;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 7rem;
+    padding: 0.938rem;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.ul-menu li{
+    padding: 0.625rem;
+}
+
+nav ul.ul-menu li:not(:last-child){
+    margin-bottom: 0.625rem;
+}
+
+		
+nav ul li a.active{
+	color: #1AE8E5;
+}
+
+
+.container-menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cb-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 1.375rem;
+    width: 1.875rem;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 0.313rem;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0px;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+#cb-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#cb-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#cb-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.a-nav{
+	color: #f2f2f2;
+	right: 0;
+    margin-left: auto;
+	text-decoration: none;
+	padding: 0.125rem 0.625rem;
+	padding-right: 1.875rem;
+	text-decoration: solid;
+	font-weight: bold;
+	font-size: larger;
+}
+
+@media(min-width: 768px) {
+    nav ul.ul-menu{
+        display: flex!important;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        padding: 0;
+        background: none;
+    }
+    nav ul.ul-menu li:not(:last-child){
+        margin-bottom: 0;
+    }
+    #container-menu{
+        display: none;
+    }
+}

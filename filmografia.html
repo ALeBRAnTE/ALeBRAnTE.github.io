@@ -1,23 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Filmografia Sylvester Stallone</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="imagens/icon.jpg" type="image/jpg">
-	</head>
-	<body>
-    <nav>
-      <a href="index.html" class="a-nav">Sylvester Stallone</a>
-      <ul>
-        <li><a class="active anton-font" href="filmografia.html">Filmografia</a></li>
-        <li><a href="index.html" class="anton-font">Página Inicial</a></li>
-      </ul>
-    </nav>
-		<section>
-      <header>
-        <h1 class="mt-3 text-center anton-font">Filmografia Sylvester Stallone</h1>
-      </header>
+<head>
+<title>Filmografia Sylvester Stallone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="src/style.css" rel="stylesheet" type="text/css">
+<link href="src/nav.css" rel="stylesheet" type="text/css">
+<link href="src/footer.css" rel="stylesheet" type="text/css">
+<link href="src/table.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+</head>
+<body>
+    <nav id="menu-bar"> 
+        <div id="container-menu">
+            <input type="checkbox" id="cb-menu" onclick="menu()">
+            <label for="cb-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <ul class="ul-menu">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="filmografia.html">Filmografia</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+        <a href="index.html" class="a-nav">Sylvester Stallone</a>
+      </nav>
+      <section>
+        <header>
+          <h1 class="mt-3 text-center anton-font">Filmografia Sylvester Stallone</h1>
+        </header>
 		  <article class="text-justify">
           <table class="mt-3">
             <thead>
@@ -520,6 +533,7 @@
           <a href="https://github.com/ALeBRAnTE/" target="_blank">Lucas Alebrante</a>
         </li>
       </ul>
-    </footer>  
+    </footer>
+    <script src="src/nav.js"></script>  
 	</body>
 </html>

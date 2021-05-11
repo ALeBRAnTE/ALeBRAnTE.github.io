@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@font-face {
+      font-family: "anton";
+      src: url("../fontes/anton.ttf");
+      }
+.anton-font{
+		font-family: "anton";  
+	}
+@font-face {
+	font-family: "oswald";
+	src: url("../fontes/Oswald.ttf");
+}
+.oswald-font{
+	font-family: "oswald";
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: aliceblue;
+    height: 100%;
+    font-family: "oswald";
+}
+
+
+section{
+    margin-top: 2.25rem;
+    padding: 10px;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+article{ 
+    padding-right: 0.95rem;
+    padding-left: 0.95rem;
+	color: #29251D;
+	padding: 1.25rem;
+    text-align: justify;
+}
+
+.col-img{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	width: 100%;
+	position: relative;
+	padding-right: 0.95rem;
+	text-align: center;
+}
+
+figcaption {
+    background-color: #29251D;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+
+h1{
+	font-size: 2.5rem
+}
+h3{
+	font-size: 1.75rem;
+}
+h4{
+	font-size: 1.5rem;
+}
+h5{
+	font-size: 1.25rem;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.mt-1{
+	margin-top: .5rem
+}
+.mt-2{
+	margin-top: 1.5rem
+}
+.mt-3{
+	margin-top: 3rem
+}
+
+.ml-1{
+	margin-left: .5rem
+}
+.ml-2{
+	margin-left: 1.5rem
+}
+.ml-3{
+	margin-left: 3rem
+}

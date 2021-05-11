@@ -1,0 +1,45 @@
+footer{
+	margin-top: 2.25rem;
+	border-top: 0.15rem solid #1AE8E5;	
+	height: 6rem;
+	background-color: #29251D;
+	position: relative;
+	color: #ffffff;
+	display: block;
+	padding: 0.5rem 1rem;
+	margin-left: 0%;
+	margin-right: 0%;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:1030;
+}
+
+footer ul{
+	padding-right: 1.875rem;
+	padding-top: 0.938rem;
+	margin: 0rem;
+    background-color: #29251D;
+	list-style: none;
+	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+}
+
+footer ul li { 
+	display: inline;
+}
+
+footer a:hover {
+	color: #1AE8E5;
+	transition-duration: 1s;
+}
+
+footer a{
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+.a-fot{
+	float: right;
+	padding-top: 1.875rem;
+}
