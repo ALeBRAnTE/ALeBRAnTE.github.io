@@ -6,6 +6,11 @@ nav{
     align-items: center;
     justify-content: right;
     border-bottom: 0.15rem solid #1AE8E5;
+    position: fixed;
+    top:0;
+	right:0;
+	left:0;
+	z-index:1030;
 }
 
 nav ul li {

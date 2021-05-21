@@ -12,7 +12,6 @@ footer{
 	bottom:0;
 	right:0;
 	left:0;
-	z-index:1030;
 }
 
 footer div{
@@ -49,6 +48,4 @@ footer a{
 		margin-left: auto;
 		right: 0;
 	}
-
-	
 }

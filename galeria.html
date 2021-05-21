@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Galeria Sylvester Stallone</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="src/style.css" rel="stylesheet" type="text/css">
-<link href="src/nav.css" rel="stylesheet" type="text/css">
-<link href="src/slide.css" rel="stylesheet" type="text/css">
-<link href="src/footer.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="imagens/icon.jpg" type="image/jpg">
-</head>
-<body>
-    <nav id="menu-bar"> 
-        <div id="container-menu">
-            <input type="checkbox" id="cb-menu" onclick="menu()">
-            <label for="cb-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        <ul class="ul-menu">
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="filmografia.html">Filmografia</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-        </ul>
-        <a href="index.html" class="a-nav">Sylvester Stallone</a>
-      </nav>
-      <section>
-        <header>
-          <h1 class="mt-3 text-center anton-font">Galeria Sylvester Stallone</h1>
-        </header>
-        <article class="mt-3">
-            <div class="slideshow-container">
+  <head>
+    <title>Galeria Sylvester Stallone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/style.css" rel="stylesheet" type="text/css">
+    <link href="src/nav.css" rel="stylesheet" type="text/css">
+    <link href="src/slide.css" rel="stylesheet" type="text/css">
+    <link href="src/footer.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <a href="index.html" class="a-nav">Sylvester Stallone</a>
+      <ul class="ul-menu">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="filmografia.html">Filmografia</a></li>
+        <li><a href="galeria.html" class="active">Galeria</a></li>
+      </ul> 
+      <div id="container-menu">
+        <input type="checkbox" id="cb-menu" onclick="menu()">
+          <label for="cb-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+      </div>
+    </nav>
+    <article>
+      <header>
+        <h1 class="mt-3 text-center anton-font">Galeria Sylvester Stallone</h1>
+      </header>
+      <section class="mt-3">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="num-img ">1 / 6</div>
+            <img src="imagens/banner.jpg" style="width:100%" alt="Silvester Stallone no Filme Backtrace" title="Filme Backtrace">
+            <div class="texto">Filme Backtrace</div>
+          </div>
 
-                <div class="mySlides fade">
-                  <div class="num-img ">1 / 3</div>
-                  <img src="imagens/banner.jpg" style="width:100%" alt="" title="">
-                  <div class="texto">Filme 1</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="num-img ">2 / 3</div>
-                  <img src="imagens/banner1.jpg" style="width:100%" alt="" title="">
-                  <div class="texto">Filme 2</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="num-img ">3 / 3</div>
-                  <img src="imagens/banner2.jpg" style="width:100%" alt="" title="">
-                  <div class="texto">Filme 3</div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
-                </div>
-                <div style="text-align:center" class="mt-2">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>
-        </article>    
-          
-      </section>
-      <footer class="mt-3">
+          <div class="mySlides fade">
+            <div class="num-img ">2 / 6</div>
+            <img src="imagens/banner1.jpg" style="width:100%" alt="Foto do Silvester Stallone" title="Foto Silvester Stallone">
+            <div class="texto">Foto do Silvester Stallone</div>
+          </div>
+                  
+          <div class="mySlides fade">
+            <div class="num-img ">3 / 6</div>
+            <img src="imagens/banner2.jpg" style="width:100%" alt="Silvester Stallone no Filme Rambo" title="Filme Rambo">
+            <div class="texto">Filme Rambo</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="num-img ">4 / 6</div>
+            <img src="imagens/banner3.jpg" style="width:100%" alt="Silvester Stallone no Filme Rota de Fuga" title="Filme Rota de Fuga">
+            <div class="texto">Filme Rota de Fuga</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="num-img ">5 / 6</div>
+            <img src="imagens/banner4.jpg" style="width:100%" alt="Silvester Stallone e o Elenco de os Mercenários 3" title="Elenco os Mercenários 3">
+            <div class="texto">Elenco os Mercenários 3</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="num-img ">6 / 6</div>
+            <img src="imagens/banner5.jpg" style="width:100%" alt="Silvester Stallone no Falcão - O Campeão dos Campeões" title="Falcão - O Campeão dos Campeões">
+            <div class="texto">Filme Falcão - O Campeão dos Campeões</div>
+          </div>
+                  
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+        </div>
+        <div style="text-align:center" class="mt-2">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </section>          
+    </article>
+    <footer>
+      <div>
         <a href="galeria.html" class="a-fot">Voltar ao topo</a>
-      <ul>
-        <li>©2021 <a href="https://www.facebook.com/ForcetechJr" target="_blank">Forcetech Jr.</a></li>
-      </ul>
-      <ul>
-        <li>
+      </div>
+      <div>
+        ©2021 <a href="https://www.facebook.com/ForcetechJr" target="_blank">Forcetech Jr.</a>
+      </div>
+      <div>
           Desenvolvido por: 
           <a href="https://github.com/igor2501/" target="_blank">Igor Przybysz</a> 
           e 
           <a href="https://github.com/ALeBRAnTE/" target="_blank">Lucas Alebrante</a>
-        </li>
-      </ul>
-      </footer>
-
-
-<script src="src/nav.js"></script>
-<script src="src/slide.js"></script>
-</body>
+      </div>
+    </footer>
+    <script src="src/nav.js"></script>
+    <script src="src/slide.js"></script>
+  </body>
 </html>
