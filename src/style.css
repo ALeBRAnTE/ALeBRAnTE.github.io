@@ -4,13 +4,16 @@
       font-family: "anton";
       src: url("../fontes/anton.ttf");
       }
+
 .anton-font{
 		font-family: "anton";  
 	}
+
 @font-face {
 	font-family: "oswald";
 	src: url("../fontes/Oswald.ttf");
 }
+
 .oswald-font{
 	font-family: "oswald";
 } 
@@ -29,7 +32,6 @@ html, body{
 	
 }
 
-
 article{
     margin-top: 2.25rem;
     padding: 10px;
@@ -44,7 +46,7 @@ article{
 section{ 
     padding-right: 0.95rem;
     padding-left: 0.95rem;
-	color: #29251D;
+	color: #1C1C1C;
 	padding: 1.25rem;
     text-align: justify;
 }
@@ -59,7 +61,7 @@ section{
 }
 
 figcaption {
-    background-color: #29251D;
+    background-color: #1C1C1C;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 0.2rem;
@@ -69,12 +71,15 @@ figcaption {
 h1{
 	font-size: 2.5rem
 }
+
 h3{
 	font-size: 1.75rem;
 }
+
 h4{
 	font-size: 1.5rem;
 }
+
 h5{
 	font-size: 1.25rem;
 }
@@ -90,9 +95,11 @@ h5{
 .mt-1{
 	margin-top: .5rem
 }
+
 .mt-2{
 	margin-top: 1.5rem
 }
+
 .mt-3{
 	margin-top: 3rem
 }
@@ -101,10 +108,12 @@ h5{
 	margin-left: .5rem;
 	margin-right: .5rem;
 }
+
 .mlr-2{
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
+
 .mlr-3{
 	margin-left: 3rem;
 	margin-right: 3rem;

@@ -1,5 +1,5 @@
 nav{
-    background-color: #29251D;
+    background-color: #1C1C1C;
     display: flex;
     padding: 0 0.938rem;
     height: 4.25rem;
@@ -29,7 +29,7 @@ nav ul li a:hover{
 }
 
 nav ul.ul-menu{
-    background-color: #29251D;
+    background-color: #1C1C1C;
     position: relative;
     left: 0;
     top: 7rem;
@@ -46,12 +46,10 @@ nav ul.ul-menu li{
 nav ul.ul-menu li:not(:last-child){
     margin-bottom: 0.625rem;
 }
-
-		
+	
 nav ul li a.active{
 	color: #1AE8E5;
 }
-
 
 .container-menu{
     height: 100%;
@@ -129,9 +127,11 @@ label span:nth-child(3){
         padding: 0;
         background: none;
     }
+
     nav ul.ul-menu li:not(:last-child){
         margin-bottom: 0;
     }
+    
     #container-menu{
         display: none;
     }

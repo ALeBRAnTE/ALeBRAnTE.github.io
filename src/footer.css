@@ -2,7 +2,7 @@ footer{
 	margin-top: 2.25rem;
 	border-top: 0.15rem solid #1AE8E5;	
 	height: 6rem;
-	background-color: #29251D;
+	background-color: #1C1C1C;
 	position: relative;
 	color: #ffffff;
 	display: block;
@@ -18,7 +18,7 @@ footer div{
 	padding-right: 1.875rem;
 	padding-top: 0.35rem;
 	margin: 0;
-    background-color: #29251D;
+    background-color: #1C1C1C;
 	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	text-align: center;
 }
