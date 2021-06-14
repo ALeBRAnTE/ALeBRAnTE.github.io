@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Sylvester Stallone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/style.css" rel="stylesheet" type="text/css">
+    <link href="src/nav.css" rel="stylesheet" type="text/css">
+    <link href="src/footer.css" rel="stylesheet" type="text/css">
+    <link href="src/avaliacao.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+    <script type="text/javascript">
+      // trigger a resize event once the window is loaded, it refresh the Flickity slider on resize
+      window.onload = function(){
+      window.dispatchEvent(new Event('resize'));
+      }
+    </script>
+  </head>
+  <body onload="Listar()">
+    <nav id="menu-bar">
+      <a href="index.html" class="a-nav">Sylvester Stallone</a>
+      <ul class="ul-menu">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="filmografia.html">Filmografia</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="premios.html">Prêmios e Indicações</a></li>
+        <li><a href="avaliacao.html" class="active">Avaliações de Filmes</a></li>
+      </ul> 
+      <div id="container-menu">
+        <input type="checkbox" id="cb-menu" onclick="menu()">
+        <label class="label-menu" for="cb-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </nav>
+    <article>
+      <header>
+        <h1 class="mt-3 text-center anton-font">Avaliações dos Filmes do Sylvester Stallone</h1>
+      </header>
+      <section class="text-justify oswald-font">
+        <div class="container-grid-rating">
+            <div class="grid-item-rating">
+                <form id="fmrAvaliacao">
+                    <h3 class="mtb-3 anton-font">Avalie um Filme:</h3>
+                    <input class="Codigo" type="hidden" id="Codigo" name="Codigo">
+                    <label>Nome do Filme:</label><br>
+                    <input class="Filme" type="text" id="NameFilm" name="NameFilm"><br>
+                    <div class="rate" id="rate">
+                        <p>Avaliação:</p>
+                        <input type="radio" id="star5" name="rate" value="5" onclick="defineNota(5)" />
+                        <label for="star5" title="Ótimo"></label>
+                        <input type="radio" id="star4" name="rate" value="4" onclick="defineNota(4)" />
+                        <label for="star4" title="Muito Bom"></label>
+                        <input type="radio" id="star3" name="rate" value="3" onclick="defineNota(3)" />
+                        <label for="star3" title="Bom"></label>
+                        <input type="radio" id="star2" name="rate" value="2" onclick="defineNota(2)" />
+                        <label for="star2" title="Ruim"></label>
+                        <input type="radio" id="star1" name="rate" value="1" onclick="defineNota(1)"/>
+                        <label for="star1" title="Muito Ruim"></label>
+                    </div><br><br><br>
+                    <label>Critíca:</label>
+                    <textarea cols="40" rows="10" id="Critica" name="Critica"></textarea><br>
+                    <input id="submitInsert" type="submit" value="Salvar Avaliação" onclick="Salvar()">
+                    <input id="submitUpdate" style="display: none;" type="submit" value="Salvar Edição" onclick="Modificar()">
+                </form>
+            </div>
+            <div class="grid-item-rating" >
+              <h3 class="mtb-3 anton-font">Filmes Avaliados:</h3>
+                <table id="filmes-avaliados">
+                  <thead>
+                      <tr>
+                        <th scope="col">Nome do Filme</th>
+                        <th scope="col">Nota</th>
+                        <th scope="col">Critíca</th>
+                        <th scope="col">Opções</th>     
+                      </tr>
+                  </thead>
+                  <tbody id="tDados">
+
+                  </tbody>
+                </table>
+            </div>
+        </div>     
+      </section>      
+    </article>
+    <footer>
+      <section id="f-line1">
+        <div id="f-left">
+          <p class="f-destaque"><a href="index.html">Início</a></p>
+          <p><a href="galeria.html">Galeria</a></p>
+        </div>
+        <div id="f-center">
+          <p class="f-destaque"> <a href="filmografia.html">Filmografia</a></p>
+          <p><a href="premios.html">Prêmios e Indicações</a></p>
+          <p><a href="avaliacao.html">Avaliações de Filmes</a></p>
+        </div>
+        <div id="f-right">
+          <p class="f-destaque"><a href="#">Voltar ao Topo</a></p>
+        </div>
+      </section>
+      <section id="f-line2">
+        <div id="f-bottom">
+          ©2021 
+          <a href="https://www.facebook.com/ForcetechJr" target="_blank">Forcetech Jr. Soluções.</a>
+          Desenvolvido por: 
+          <a href="https://github.com/ALeBRAnTE/" target="_blank">Lucas Alebrante</a>
+          e 
+          <a href="https://github.com/igor2501/" target="_blank">Igor Przybysz</a>
+        </div>
+      </section>
+    </footer>
+    <script src="js/nav.js"></script>
+	<script type="text/javascript" src="js/avaliacao.js"></script>
+  </body>
+</html>

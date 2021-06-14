@@ -25,18 +25,39 @@
 	
 }
 
+
+
+:target{
+    scroll-margin-top: 4.25rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    }
+::-webkit-scrollbar-track {
+    background:#1C1C1C;
+    }
+::-webkit-scrollbar-thumb {
+    background: #1AE8E5;
+    height: 10px;
+    border-radius: 20px;
+    }
+::-webkit-scrollbar-thumb:hover {
+    background: #13bcb9;
+    }
+
 html, body{
     background-color: aliceblue;
     font-family: "oswald";
 	height: 100%;
-	
+	font-size: 1rem;
+	scroll-behavior: smooth;
 }
 
 article{
-    margin-top: 2.25rem;
-    padding: 10px;
+    margin-top: 6rem;
     text-align: center;
-    max-width: 90%;
+    max-width: 95vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -44,21 +65,30 @@ article{
 }
 
 section{ 
-    padding-right: 0.95rem;
-    padding-left: 0.95rem;
 	color: #1C1C1C;
-	padding: 1.25rem;
+	padding: 1.25rem 0.95rem;
     text-align: justify;
 }
 
-.col-img{
-	-ms-flex: 0 0 100%;
-	flex: 0 0 100%;
-	width: 100%;
-	position: relative;
-	padding-right: 0.95rem;
-	text-align: center;
+.bg-gray{
+	background-color: #C0C0C0;
 }
+
+.bg-alice{
+	background-color: aliceblue;
+}
+
+.col-img{
+	width: 100%;
+}
+
+.container-grid{
+	display: grid;
+	position: relative;
+	grid-template-areas: "grid-item" "grid-item";
+	grid-template-columns: 50% 50%;
+}
+
 
 figcaption {
     background-color: #1C1C1C;
@@ -104,6 +134,11 @@ h5{
 	margin-top: 3rem
 }
 
+.mtb-3{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
 .mlr-1{
 	margin-left: .5rem;
 	margin-right: .5rem;
@@ -117,4 +152,32 @@ h5{
 .mlr-3{
 	margin-left: 3rem;
 	margin-right: 3rem;
+}
+
+@media(max-width: 768px) {
+    .mlr-1{
+		margin-left: .25rem;
+		margin-right: .25rem;
+	}
+	
+	.mlr-2{
+		margin-left: .5rem;
+		margin-right: .5rem;
+	}
+	
+	.mlr-3{
+		margin-left: .75rem;
+		margin-right: .75rem;
+	}
+
+	aside{
+		max-width: 90vw;
+	}
+
+	.container-grid{
+		grid-template-areas: "grid-item" 
+							 "grid-item";
+		grid-template-columns: 100%;
+	}
+	
 }

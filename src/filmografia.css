@@ -4,6 +4,10 @@ thead th{
     border: 0.15rem solid #1AE8E5;
 }
 
+tbody td{
+    padding: 10px;
+}
+
 table td, table th{
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
@@ -21,4 +25,10 @@ table{
 
 tr:nth-child(even) {
 	background-color: #C0C0C0;
+}
+
+@media(max-width: 768px) {
+    table{
+		font-size: 0.95rem;
+	}
 }

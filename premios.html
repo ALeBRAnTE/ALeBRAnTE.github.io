@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <title>Sylvester Stallone</title>
     <meta charset="UTF-8">
@@ -9,6 +9,12 @@
     <link href="src/footer.css" rel="stylesheet" type="text/css">
     <link href="src/premios.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+    <script type="text/javascript">
+      // trigger a resize event once the window is loaded, it refresh the Flickity slider on resize
+      window.onload = function(){
+      window.dispatchEvent(new Event('resize'));
+      }
+    </script>
   </head>
   <body>
     <nav id="menu-bar">
@@ -18,10 +24,11 @@
         <li><a href="filmografia.html">Filmografia</a></li>
         <li><a href="galeria.html">Galeria</a></li> 
         <li><a href="premios.html" class="active">Prêmios e Indicações</a></li>
+        <li><a href="avaliacao.html">Avaliações de Filmes</a></li>
       </ul> 
       <div id="container-menu">
         <input type="checkbox" id="cb-menu" onclick="menu()">
-        <label for="cb-menu">
+        <label class="label-menu" for="cb-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -36,20 +43,20 @@
         <table class="mt-3">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Academy Awards</th>
+                   <th scope="row" colspan="5" class="title">Academy Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th rowspan="2">1977</th>
-                <th rowspan="2">Rocky</th>
+                <th scope="row" rowspan="2">1977</th>
+                <th scope="row" rowspan="2">Rocky</th>
                 <td rowspan="3">Indicado</td>
                 <td rowspan="3">Oscar</td>
                 <td> Melhor Ator</td>            
@@ -58,8 +65,8 @@
                   <td>Melhor Roteiro Original</td>
               </tr>
               <tr>
-                <th>2016</th>
-                <th>Creed: Nascido Para Lutar</th>
+                <th scope="row">2016</th>
+                <th scope="row">Creed: Nascido Para Lutar</th>
                 <td>Melhor Ator Coadjuvante</td>
               </tr>
             </tbody>
@@ -68,18 +75,18 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                    <th colspan="5" class="title">
+                    <th scope="row" colspan="5" class="title">
                        Academy of Science Fiction, Fantasy & Horror Films
                     </th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
+                  <th scope="row">Ano</th>
+                  <th scope="row">Prêmio</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1997</th>
+                <th scope="row">1997</th>
                 <td>Lifetime Achievement Award</th>          
               </tr>
             </tbody>
@@ -88,20 +95,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">BAFTA Awards</th>
+                   <th scope="row" colspan="5" class="title">BAFTA Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th rowspan="2">1978</th>
-                <th rowspan="2">Rocky</th>
+                <th scope="row" rowspan="2">1978</th>
+                <th scope="row" rowspan="2">Rocky</th>
                 <td rowspan="2">Nomeador</td>
                 <td rowspan="2">BAFTA Film Award</td>
                 <td> Melhor Ator</td>            
@@ -115,16 +122,16 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">César Awards</th>
+                   <th scope="row" colspan="5" class="title">César Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
+                  <th scope="row">Ano</th>
+                  <th scope="row">Prêmio</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1992</th>
+                <th scope="row">1992</th>
                 <td>Honorário César</td>            
               </tr>
             </tbody>
@@ -133,20 +140,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">David di Donatello Awards</th>
+                   <th scope="row" colspan="5" class="title">David di Donatello Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1977</th>
-                <th>Rocky</th>
+                <th scope="row">1977</th>
+                <th scope="row">Rocky</th>
                 <td>Vencido</td>
                 <td>David</td>
                 <td>Melhor ator estrangeiro</td>            
@@ -157,30 +164,30 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Golden Apple Awards</th>
+                   <th scope="row" colspan="5" class="title">Golden Apple Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1985</th>
+                <th scope="row">1985</th>
                 <td>Vencido</th>
                 <td>Sour Apple</td>
                 <td></td>          
               </tr>
               <tr>
-                <th>1996</th>
+                <th scope="row">1996</th>
                 <td>Nomeado</td>
                 <td rowspan="2">Golden Apple</td>
                 <td rowspan="2">Astro do ano</td> 
               </tr>
               <tr>
-                <th>1997</th>
+                <th scope="row">1997</th>
                 <td>Vencido</th>
               </tr>
             </tbody>
@@ -189,18 +196,18 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Golden Camera</th>
+                   <th scope="row" scope="row" colspan="5" class="title">Golden Camera</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>2004</th>
+                <th scope="row">2004</th>
                 <td>Vencido</th>
                 <td>Golden Camera</td>
                 <td>Melhor ator internacional</td>          
@@ -211,20 +218,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Golden Globes</th>
+                   <th scope="row" colspan="5" class="title">Golden Globes</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th rowspan="2">1977</th>
-                <th rowspan="2">Rocky</th>
+                <th scope="row" rowspan="2">1977</th>
+                <th scope="row" rowspan="2">Rocky</th>
                 <td rowspan="2">Nomeado</td>
                 <td rowspan="3">Golden Globe</td>
                 <td>Melhor Ator - drama</td>            
@@ -233,8 +240,8 @@
                   <td>Melhor roteiro</td>
               </tr>
               <tr>
-                <th>2016</th>
-                <th>Creed: Nascido Para Lutar</th>
+                <th scope="row">2016</th>
+                <th scope="row">Creed: Nascido Para Lutar</th>
                 <td>Vencido</td>
                 <td>Melhor ator coadjuvante</td>
               </tr>
@@ -244,16 +251,16 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title"> Hasty Pudding Theatricals</th>
+                   <th scope="row" colspan="5" class="title"> Hasty Pudding Theatricals</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
+                  <th scope="row">Ano</th>
+                  <th scope="row">Prêmio</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1977</th>
+                <th scope="row">1977</th>
                 <td>Personalidade do ano</td>         
               </tr>
             </tbody>
@@ -262,20 +269,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Kansas City Film Critics Circle Awards</th>
+                   <th scope="row" colspan="5" class="title">Kansas City Film Critics Circle Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1977</th>
-                <th>Rocky</th>
+                <th scope="row">1977</th>
+                <th scope="row">Rocky</th>
                 <td>Vencido</td>
                 <td>KCFCC Award</td>
                 <td>Melhor Ator</td>            
@@ -286,17 +293,17 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">
+                   <th scope="row" colspan="5" class="title">
                     Palm Springs International Film Festival</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Prêmio</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1998</th>
+                <th scope="row">1998</th>
                 <td>Desert Palm Achievement Award</td>         
               </tr>
             </tbody>
@@ -305,18 +312,18 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Kansas City Film Critics Circle Awards</th>
+                   <th scope="row" colspan="5" class="title">Kansas City Film Critics Circle Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1986</th>
+                <th scope="row">1986</th>
                 <td>Vencido</td>
                 <td>People's Choice Award</td>
                 <td>Ator mais popular</td>            
@@ -327,20 +334,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                    <th colspan="5" class="title">Razzie Awards</th>
+                    <th scope="row" colspan="5" class="title">Razzie Awards</th>
                 </tr>
                 <tr>
-                    <th>Ano</th>
-                    <th>Filme</th>
-                    <th>Resultado</th>
-                    <th>Prêmio</th>
-                    <th>Categoria</th>
+                    <th scope="col">Ano</th>
+                    <th scope="col">Filme</th>
+                    <th scope="col">Resultado</th>
+                    <th scope="col">Prêmio</th>
+                    <th scope="col">Categoria</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th rowspan="2">1985</th>
-                    <th rowspan="2">Rhinestone</th>
+                    <th scope="row" rowspan="2">1985</th>
+                    <th scope="row" rowspan="2">Rhinestone</th>
                     <td>Nomeado</td>
                     <td rowspan="34">Razzie Award</td>
                     <td>Pior Roteiro</td>            
@@ -350,37 +357,37 @@
                     <td>Pior Ator</td>
                 </tr>
                 <tr>
-                    <th rowspan="4">1986</th>
-                    <th>Rocky IV</th>
+                    <th scope="row" rowspan="4">1986</th>
+                    <th scope="row">Rocky IV</th>
                     <td>Nomeado</td>
                     <td rowspan="2">Pior Roteiro</td>            
                 </tr>
                 <tr>
-                    <th>Rambo: First Blood Part II</th>
+                    <th scope="row">Rambo: First Blood Part II</th>
                     <td rowspan="3">Vencido</td>
                 </tr>
                 <tr>
-                    <th>Rocky IV</th>
+                    <th scope="row">Rocky IV</th>
                     <td>Pior Diretor</td>
                 </tr>
                 <tr>
-                    <th>Rambo: First Blood Part II</th>
+                    <th scope="row">Rambo: First Blood Part II</th>
                     <td>Pior Ator</td>
                 </tr>
                 <tr>
-                    <th>1987</th>
-                    <th>Cobra</th>
+                    <th scope="row">1987</th>
+                    <th scope="row">Cobra</th>
                     <td rowspan="3">Nomeado</td>
                     <td>Pior Roteiro</td>            
                 </tr>
                 <tr>
-                    <th>1988</th>
-                    <th>Over the Top</th>
+                    <th scope="row">1988</th>
+                    <th scope="row">Over the Top</th>
                     <td>Pior Ator</td>            
                 </tr>
                 <tr>
-                    <th rowspan="2">1989</th>
-                    <th rowspan="2">Rambo III</th>
+                    <th scope="row" rowspan="2">1989</th>
+                    <th scope="row" rowspan="2">Rambo III</th>
                     <td>Pior Roteiro</td>            
                 </tr>
                 <tr>
@@ -388,8 +395,8 @@
                     <td rowspan="2">Pior Ator</td>            
                 </tr>
                 <tr>
-                    <th rowspan="9">1990</th>
-                    <th rowspan="2">Lock Up</th>
+                    <th scope="row" rowspan="9">1990</th>
+                    <th scope="row" rowspan="2">Lock Up</th>
                     <td>Nomeado</td>            
                 </tr>
                 <tr>
@@ -397,51 +404,51 @@
                     <td rowspan="8">Pior Ator da Década</td>           
                 </tr>
                 <tr>
-                    <th>Cobra</th>           
+                    <th scope="row">Cobra</th>           
                 </tr>
                 <tr>
-                    <th>Over the Top</th>           
+                    <th scope="row">Over the Top</th>           
                 </tr>
                 <tr>
-                    <th>Rambo: First Blood Part II</th>           
+                    <th scope="row">Rambo: First Blood Part II</th>           
                 </tr>
                 <tr>
-                    <th>Rambo III</th>           
+                    <th scope="row">Rambo III</th>           
                 </tr>
                 <tr>
-                    <th>Rocky IV</th>           
+                    <th scope="row">Rocky IV</th>           
                 </tr>
                 <tr>
-                    <th>Rhinestone</th>           
+                    <th scope="row">Rhinestone</th>           
                 </tr>
                 <tr>
-                    <th>Tango & Cash</th>           
+                    <th scope="row">Tango & Cash</th>           
                 </tr>
                 <tr>
-                    <th>1991</th>
-                    <th>Rocky V</th>
+                    <th scope="row">1991</th>
+                    <th scope="row">Rocky V</th>
                     <td rowspan="2">Nomeado</td>
                     <td>Pior Roteiro</td>            
                 </tr>
                 <tr>
-                    <th>1992</th>
-                    <th>Oscar</th>
+                    <th scope="row">1992</th>
+                    <th scope="row">Oscar</th>
                     <td rowspan="2">Pior Ator</td>            
                 </tr>
                 <tr>
-                    <th>1993</th>
-                    <th>Stop! Or My Mom Will Shoot</th>
+                    <th scope="row">1993</th>
+                    <th scope="row">Stop! Or My Mom Will Shoot</th>
                     <td>Vencido</td>            
                 </tr>
                 <tr>
-                    <th>1994</th>
-                    <th>Cliffhanger</th>
+                    <th scope="row">1994</th>
+                    <th scope="row">Cliffhanger</th>
                     <td rowspan="2">Nomeado</td>
                     <td>Pior Roteiro</td>             
                 </tr>
                 <tr>
-                    <th rowspan="2">1995</th>
-                    <th rowspan="2">The Specialist</th>
+                    <th scope="row" rowspan="2">1995</th>
+                    <th scope="row" rowspan="2">The Specialist</th>
                     <td>Pior Ator</td>             
                 </tr>
                 <tr>
@@ -449,35 +456,35 @@
                     <td>Worst Screen Couple</td>             
                 </tr>
                 <tr>
-                    <th>1996</th>
-                    <th>Assassins</th>
+                    <th scope="row">1996</th>
+                    <th scope="row">Assassins</th>
                     <td rowspan="3">Nomeado</td>  
                     <td rowspan="2">Pior Ator</td>            
                 </tr>
                 <tr>
-                    <th>1997</th>
-                    <th>Daylight</th>           
+                    <th scope="row">1997</th>
+                    <th scope="row">Daylight</th>           
                 </tr>
                 <tr>
-                    <th>1999</th>
-                    <th>An Alan Smithee Film: Burn Hollywood Burn</th>
+                    <th scope="row">1999</th>
+                    <th scope="row">An Alan Smithee Film: Burn Hollywood Burn</th>
                     <td>Pior Ator Coadjuvante</td>           
                 </tr>
                 <tr>
-                    <th>2000</th>
-                    <th></th>
+                    <th scope="row">2000</th>
+                    <th scope="row"></th>
                     <td>Vencido</td>
                     <td>Pior Ator do Século</td>           
                 </tr>
                 <tr>
-                    <th>2001</th>
-                    <th>Get Carter</th>
+                    <th scope="row">2001</th>
+                    <th scope="row">Get Carter</th>
                     <td rowspan="4">Nomeado</td>
                     <td>Pior Ator</td>           
                 </tr>
                 <tr>
-                    <th rowspan="3">2002</th>
-                    <th rowspan="3">Driven</th>
+                    <th scope="row" rowspan="3">2002</th>
+                    <th scope="row" rowspan="3">Driven</th>
                     <td>Pior Ator Coadjuvante</td>           
                 </tr>
                 <tr>
@@ -487,8 +494,8 @@
                     <td>Worst Screen Couple</td>           
                 </tr>
                 <tr>
-                    <th>2004</th>
-                    <th>Spy Kids 3-D: Game Over</th>
+                    <th scope="row">2004</th>
+                    <th scope="row">Spy Kids 3-D: Game Over</th>
                     <td>Vencido</td>
                     <td>Pior Ator Coadjuvante</td>           
                 </tr>
@@ -498,22 +505,22 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">ShoWest Convention</th>
+                   <th scope="row" colspan="5" class="title">ShoWest Convention</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1979</th>
+                <th scope="row">1979</th>
                 <td rowspan="2">Special Award</td>
                 <td>Estrela do Ano</td>            
               </tr>
               <tr>
-                <th>1984</th>
+                <th scope="row">1984</th>
                 <td>Estrela das Estrelas</td>            
               </tr>
             </tbody>
@@ -522,20 +529,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Stockholm Film Festival</th>
+                   <th scope="row" colspan="5" class="title">Stockholm Film Festival</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1979</th>
-                <th>Cop Land</th>
+                <th scope="row">1979</th>
+                <th scope="row">Cop Land</th>
                 <td>Vencido</td>
                 <td>Best Actor</td>
                 <td>Melhor Ator</td>            
@@ -546,16 +553,16 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Walk of Fame</th>
+                   <th scope="row" colspan="5" class="title">Walk of Fame</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Prêmio</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1983</th>
+                <th scope="row">1983</th>
                 <td>Star on the Walk of Fame</td>           
               </tr>
             </tbody>
@@ -564,16 +571,16 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">World Stunt Awards</th>
+                   <th scope="row" colspan="5" class="title">World Stunt Awards</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Prêmio</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Prêmio</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>2005</th>
+                <th scope="row">2005</th>
                 <td>Taurus Honorary Award</td>           
               </tr>
             </tbody>
@@ -582,20 +589,20 @@
         <table class="mt-2">
             <thead>
                 <tr>
-                   <th colspan="5" class="title">Writers Guild of America</th>
+                   <th scope="row" colspan="5" class="title">Writers Guild of America</th>
                 </tr>
                 <tr>
-                  <th>Ano</th>
-                  <th>Filme</th>
-                  <th>Resultado</th>
-                  <th>Prêmio</th>
-                  <th>Categoria</th>
+                  <th scope="col">Ano</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Prêmio</th>
+                  <th scope="col">Categoria</th>
                 </tr>
               </thead>
             <tbody>
               <tr>
-                <th>1977</th>
-                <th>Rocky</th>
+                <th scope="row">1977</th>
+                <th scope="row">Rocky</th>
                 <td>Nomeado</td>
                 <td>WGA Award</td>
                 <td>Melhor Drama Escrito</td>            
@@ -606,19 +613,31 @@
       </section>      
     </article>
     <footer>
-      <div>
-        <a href="premios.html" class="a-fot">Voltar ao topo</a>
-      </div>
-      <div>
-        ©2021 <a href="https://www.facebook.com/ForcetechJr" target="_blank">Forcetech Jr.</a>
-      </div>
-      <div>
-        Desenvolvido por: 
-        <a href="https://github.com/igor2501/" target="_blank">Igor Przybysz</a> 
-        e 
-        <a href="https://github.com/ALeBRAnTE/" target="_blank">Lucas Alebrante</a>
-      </div>
+      <section id="f-line1">
+        <div id="f-left">
+          <p class="f-destaque"><a href="index.html">Início</a></p>
+          <p><a href="galeria.html">Galeria</a></p>
+        </div>
+        <div id="f-center">
+          <p class="f-destaque"> <a href="filmografia.html">Filmografia</a></p>
+          <p><a href="premios.html">Prêmios e Indicações</a></p>
+          <p><a href="avaliacao.html">Avaliações de Filmes</a></p>
+        </div>
+        <div id="f-right">
+          <p class="f-destaque"><a href="#">Voltar ao Topo</a></p>
+        </div>
+      </section>
+      <section id="f-line2">
+        <div id="f-bottom">
+          ©2021 
+          <a href="https://www.facebook.com/ForcetechJr" target="_blank">Forcetech Jr. Soluções.</a>
+          Desenvolvido por: 
+          <a href="https://github.com/ALeBRAnTE/" target="_blank">Lucas Alebrante</a>
+          e 
+          <a href="https://github.com/igor2501/" target="_blank">Igor Przybysz</a>
+        </div>
+      </section>
     </footer>
-    <script src="src/nav.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

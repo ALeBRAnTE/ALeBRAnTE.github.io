@@ -3,6 +3,10 @@ thead th{
     background-color: #363636;
 }
 
+tbody td{
+    padding: 10px;
+}
+
 td, th{
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
@@ -17,9 +21,14 @@ table{
 	margin-right: auto;
 	width: 100%;
 	border-collapse: collapse;
-
 }
 
 .title{
 	background-color: #1C1C1C;
+}
+
+@media(max-width: 768px) {
+    table{
+		font-size: 0.95rem;
+	}
 }
