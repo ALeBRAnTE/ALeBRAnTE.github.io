@@ -41,32 +41,36 @@
       </header>
       <section class="text-justify oswald-font">
         <div class="container-grid-rating">
-            <div class="grid-item-rating">
+            <div class="grid-item-1">
                 <form id="fmrAvaliacao">
                     <h3 class="mtb-3 anton-font">Avalie um Filme:</h3>
+                    <div class="form-t">
                     <input class="Codigo" type="hidden" id="Codigo" name="Codigo">
                     <label>Nome do Filme:</label><br>
-                    <input class="Filme" type="text" id="NameFilm" name="NameFilm"><br>
-                    <div class="rate" id="rate">
+                    <input class="Filme" type="text" id="NameFilm" name="NameFilm">
+                    </div>
+                    <div class="rate form-c" id="rate">
                         <p>Avaliação:</p>
-                        <input type="radio" id="star5" name="rate" value="5" onclick="defineNota(5)" />
-                        <label for="star5" title="Ótimo"></label>
-                        <input type="radio" id="star4" name="rate" value="4" onclick="defineNota(4)" />
-                        <label for="star4" title="Muito Bom"></label>
-                        <input type="radio" id="star3" name="rate" value="3" onclick="defineNota(3)" />
-                        <label for="star3" title="Bom"></label>
-                        <input type="radio" id="star2" name="rate" value="2" onclick="defineNota(2)" />
-                        <label for="star2" title="Ruim"></label>
                         <input type="radio" id="star1" name="rate" value="1" onclick="defineNota(1)"/>
                         <label for="star1" title="Muito Ruim"></label>
-                    </div><br><br><br>
-                    <label>Critíca:</label>
+                        <input type="radio" id="star2" name="rate" value="2" onclick="defineNota(2)" />
+                        <label for="star2" title="Ruim"></label>
+                        <input type="radio" id="star3" name="rate" value="3" onclick="defineNota(3)" />
+                        <label for="star3" title="Bom"></label>
+                        <input type="radio" id="star4" name="rate" value="4" onclick="defineNota(4)" />
+                        <label for="star4" title="Muito Bom"></label>
+                        <input type="radio" id="star5" name="rate" value="5" onclick="defineNota(5)" />
+                        <label for="star5" title="Ótimo"></label>
+                    </div>
+                    <div class="form-b">
+                    <label class="mt-2">Critíca:</label>
                     <textarea cols="40" rows="10" id="Critica" name="Critica"></textarea><br>
                     <input id="submitInsert" type="submit" value="Salvar Avaliação" onclick="Salvar()">
                     <input id="submitUpdate" style="display: none;" type="submit" value="Salvar Edição" onclick="Modificar()">
+                  </div>
                 </form>
             </div>
-            <div class="grid-item-rating" >
+            <div class="grid-item-2" >
               <h3 class="mtb-3 anton-font">Filmes Avaliados:</h3>
                 <table id="filmes-avaliados">
                   <thead>

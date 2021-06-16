@@ -55,7 +55,7 @@ footer{
 }
 
 
-@media only screen and (min-device-height: 768px) and (max-device-width: 1366px){
+@media only screen and (max-device-height: 768px) and (max-device-width: 1366px){
 	footer{
         height: 20vh;
         grid-template-areas:"f-line1" 
@@ -64,7 +64,7 @@ footer{
 	}
 }
 
-@media only screen and (min-device-height: 1366px) and (max-device-width: 768px){
+@media only screen and (max-device-height: 1366px) and (max-device-width: 768px){
 	footer{
         height: 15vh;
         grid-template-areas:"f-line1" 
@@ -73,7 +73,7 @@ footer{
 	}
 }
 
-@media only screen and (min-device-height: 360px) and (max-device-width: 640px){
+@media only screen and (max-device-height: 360px) and (max-device-width: 640px){
 	footer{
         height: 40vh;
         grid-template-areas:"f-line1" 
@@ -82,7 +82,7 @@ footer{
 	}
 }
 
-@media only screen and (min-device-height: 640px) and (max-device-width: 360px){
+@media only screen and (max-device-height: 640px) and (max-device-width: 360px){
 	footer{
         height: 30vh;
         grid-template-areas:"f-line1" 

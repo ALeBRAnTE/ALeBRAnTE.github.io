@@ -139,6 +139,18 @@ h5{
 	margin-bottom: 3rem;
 }
 
+.mb-1{
+	margin-top: .5rem
+}
+
+.mb-2{
+	margin-top: 1.5rem
+}
+
+.mb-3{
+	margin-top: 3rem
+}
+
 .mlr-1{
 	margin-left: .5rem;
 	margin-right: .5rem;
@@ -154,8 +166,43 @@ h5{
 	margin-right: 3rem;
 }
 
-@media(max-width: 768px) {
-    .mlr-1{
+@media only screen and (max-device-height: 768px) and (max-device-width: 1366px){
+	h1{
+		font-size: 5vh;
+	}	
+	h3{
+		font-size: 4.5vh;
+	}	
+	h4{
+		font-size: 4vh;
+	}	
+	h5{
+		font-size: 3.5vh;
+	}
+	article{
+		font-size: 2.2vh;
+	}
+	
+}
+
+@media only screen and (max-device-height: 1366px) and (max-device-width: 768px){
+	h1{
+		font-size: 4vh;
+	}	
+	h3{
+		font-size: 3.5vh;
+	}	
+	h4{
+		font-size: 3vh;
+	}	
+	h5{
+		font-size: 2.5vh;
+	}
+	article{
+		font-size: 1.8vh;
+		max-width: 90vw;
+	}
+	.mlr-1{
 		margin-left: .25rem;
 		margin-right: .25rem;
 	}
@@ -170,14 +217,50 @@ h5{
 		margin-right: .75rem;
 	}
 
-	aside{
-		max-width: 90vw;
-	}
-
 	.container-grid{
 		grid-template-areas: "grid-item" 
 							 "grid-item";
 		grid-template-columns: 100%;
+	}
+}
+
+@media only screen and (max-device-height: 360px) and (max-device-width: 640px){
+	h1{
+		font-size: 9vh;
+	}	
+	h3{
+		font-size: 7vh;
+	}	
+	h4{
+		font-size: 6vh;
+	}	
+	h5{
+		font-size: 5vh;
+	}
+	article{
+		font-size: 4vh;
+		width: 75%;
+	}
+	
+}
+
+@media only screen and (max-device-height: 640px) and (max-device-width: 360px){
+	h1{
+		font-size: 6vh;
+	}	
+	h3{
+		font-size: 5vh;
+	}	
+	h4{
+		font-size: 4.5vh;
+	}	
+	h5{
+		font-size: 3.5vh;
+	}
+	article{
+		font-size: 3vh;
+		width: 100%;
+		max-width: 100vw;
 	}
 	
 }

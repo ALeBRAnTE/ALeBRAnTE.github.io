@@ -27,8 +27,26 @@ tr:nth-child(even) {
 	background-color: #C0C0C0;
 }
 
-@media(max-width: 768px) {
-    table{
-		font-size: 0.95rem;
+@media only screen and (max-device-height: 768px) and (max-device-width: 1366px){
+	table{
+		font-size: 2.5vh;
 	}
+}
+
+@media only screen and (max-device-height: 1366px) and (max-device-width: 768px){
+	table{
+		font-size: 2vh;
+	}
+}
+
+@media only screen and (max-device-height: 360px) and (max-device-width: 640px){
+	table{
+		font-size: 6vh;
+	}			
+}
+
+@media only screen and (max-device-height: 640px) and (max-device-width: 360px){
+	table{
+		font-size: 3vh;
+	}	
 }

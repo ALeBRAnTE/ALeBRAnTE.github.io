@@ -107,3 +107,29 @@ img {
       width: 100%;
     } 
 }
+
+@media only screen and (max-device-height: 768px) and (max-device-width: 1366px){
+  .slideshow-container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-device-height: 1366px) and (max-device-width: 768px){
+  .slideshow-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-device-height: 360px) and (max-device-width: 640px){
+  .slideshow-container {
+    width: 90%;
+  }
+	
+}
+
+@media only screen and (max-device-height: 640px) and (max-device-width: 360px){
+  .slideshow-container {
+    width: 100%;
+  }
+	
+}

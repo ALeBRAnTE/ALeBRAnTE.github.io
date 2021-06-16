@@ -4,7 +4,7 @@ thead th{
 }
 
 tbody td{
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 td, th{
@@ -27,8 +27,33 @@ table{
 	background-color: #1C1C1C;
 }
 
-@media(max-width: 768px) {
-    table{
-		font-size: 0.95rem;
+@media only screen and (max-device-height: 768px) and (max-device-width: 1366px){
+	table{
+		font-size: 2.5vh;
 	}
+}
+
+@media only screen and (max-device-height: 1366px) and (max-device-width: 768px){
+	table{
+		font-size: 2vh;
+	}
+}
+
+@media only screen and (max-device-height: 360px) and (max-device-width: 640px){
+	table{
+		font-size: 6vh;
+	}
+	section{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-device-height: 640px) and (max-device-width: 360px){
+	table{
+		font-size: 3vh;
+	}
+	tbody td{
+		padding: 0;
+	}	
 }
