@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Marvel;
+    src: url('../fonts/Marvel.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --primary-bg-color: #870C00;
+    --secondary-bg-color: #A41000;
+    --white-bg-color: #FEFEFE;
+    --black-bg-color: #151515;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;	
+}
+
+:target{
+    scroll-margin-top: 4.25rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    }
+::-webkit-scrollbar-track {
+    background: var(--black-bg-color);
+    }
+::-webkit-scrollbar-thumb {
+    background: var(--primary-bg-color);
+    height: 10px;
+    border-radius: 20px;
+    }
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-bg-color);
+    }
+
+body{
+    background-color: var(--white-bg-color);
+}
+
+article{
+    
+}
+
+
+nav{
+    background-color: var(--primary-bg-color)!important;
+    }
+
+nav a {
+    font-family: Marvel, Arial, sans-serif!important;
+    text-decoration: none!important;
+    color: var(--white-bg-color)!important;
+    font-weight: 500!important;
+    font-size: 2rem!important;
+}
+
+nav ul li a{
+    font-family: sans-serif!important;
+    text-decoration: none!important;
+    color: var(--white-bg-color)!important;
+    font-weight: 500!important;
+    font-size: 1rem!important;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;        
+    background-color: var(--primary-bg-color);
+    text-align: center;
+    font-size: 15px;
+    color: var(--white-bg-color);
+    z-index: 1000;
+}
+
+footer a{
+    color: var(--white-bg-color);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--white-bg-color);
+    border: 1px var(--black-bg-color);
+    transition: 1s;
+    text-decoration: none;
+}
+
+footer .footer-bottom{
+    background-color: var(--secondary-bg-color);
+    padding: 10px;
+}
+
+button{
+    background-color: var(--white-bg-color)!important;
+    color: var(--primary-bg-color)!important;
+    border: var(--primary-bg-color)!important;
+}
+
+input{
+    background-color: var(--white-bg-color)!important;
+    color: var(--primary-bg-color)!important;
+    border: var(--primary-bg-color)!important;
+}

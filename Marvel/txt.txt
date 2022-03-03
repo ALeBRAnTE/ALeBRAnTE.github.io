@@ -1,0 +1,29 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+<script>
+   var hash = CryptoJS.MD5("Message");
+   alert(hash);
+</script>
+
+public key
+e6440e07f44fc8f14d86ee8aae775443
+
+private key
+de5326c223927bcf337ad95a0a7bc692c2a725b5
+
+
+
+https://gateway.marvel.com:443/v1/public/characters?apikey=e6440e07f44fc8f14d86ee8aae775443
+
+
+Imagem
+
+Nome
+
+Descrição
+
+Comics
+Series
+Stories
+events
