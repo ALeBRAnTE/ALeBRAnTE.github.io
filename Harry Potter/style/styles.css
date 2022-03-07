@@ -132,7 +132,7 @@ footer a:hover {
     position: fixed;
     right: 10px;
     width: 40px;
-    z-index: 3;
+    z-index: 1003;
     display: flex;
     justify-content: center;
     padding-left: 1px;
@@ -162,11 +162,14 @@ section{
     margin-bottom: 6rem!important;
 }
 
-.pai{
+.content{
     background-color: var(--body-bg);
     font-size: 2vh;
+    height: 50vh;
     color: var(--primary-color);
 }
+
+
 
 .miniatura {
     width: 100%;
@@ -211,5 +214,8 @@ section{
     }
     .col-6{
         width: 100%!important;
+    }
+    .back-to-top {
+        bottom: 140px;
     }
 }

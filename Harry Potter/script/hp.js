@@ -130,23 +130,23 @@ function criarDiv(nome, ator, nascimento, corolhos, casa, imagem) {
     let divOlhos = document.createElement("div");
     let divCasa = document.createElement("div");
 
-    divPai.setAttribute("class", "col-6 h-100 ")
-    divContent.setAttribute("class", "p-3 m-2 h-100 rounded pai");
+    divPai.setAttribute("class", "col-6 pai mb-4")
+    divContent.setAttribute("class", "p-3 m-2 h-100 rounded content ");
     divImagem.setAttribute("class", "col-3");
     divImagem.innerHTML = "<img id=\"myImg\" class=\"miniatura\" src=\"" + imagem + "\" />";
     divCol2.setAttribute("class", "col-9 mt-2");
     divPersonagem.setAttribute("class", "row");
-    divPersonagem.innerHTML = "<h2>" + nome + "</h2>";
-    divLinha1.setAttribute("class", "row");
+    divPersonagem.innerHTML = "<h1>" + nome + "</h1>";
+    divLinha1.setAttribute("class", "row mb-3");
     divAtor.setAttribute("class", "col-6");
-    divAtor.innerHTML = "<h5>Ator:</h5>" + ator + "";
+    divAtor.innerHTML = "<h4>Ator:</h4><h5>" + ator + "</h5>";
     divNascimento.setAttribute("class", "col-6");
-    divNascimento.innerHTML = "<h5>Nascimento:</h5>" + nascimento + "";
+    divNascimento.innerHTML = "<h4>Nascimento:</h4><h5>" + nascimento + "</h5>";
     divLinha2.setAttribute("class", "row");
     divOlhos.setAttribute("class", "col-6");
-    divOlhos.innerHTML = "<h5>Cor dos Olhos:</h5>" + corolhos + "";
+    divOlhos.innerHTML = "<h4>Cor dos Olhos:</h4><h5>" + corolhos + "</h5>";
     divCasa.setAttribute("class", "col-6");
-    divCasa.innerHTML = "<h5>Casa:</h5>" + casa + "";
+    divCasa.innerHTML = "<h4>Casa:</h4><h5>" + casa + "</h5>";
 
     divPai.appendChild(divContent);
     divContent.appendChild(divImagem);
