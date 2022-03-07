@@ -13,7 +13,7 @@ async function Init() {
     document.querySelector('#ravenclaw').addEventListener("click", filtrarRavenclaw);
 }
 
-let url= 'http://hp-api.herokuapp.com/api/characters';
+let url= 'https://hp-api.herokuapp.com/api/characters';
 
 async function carregar(sort) {
     let content = document.querySelector("section");
@@ -54,41 +54,41 @@ async function carregar(sort) {
 
 async function filtrarProfessores(event) {
     event.preventDefault();
-    url= 'http://hp-api.herokuapp.com/api/characters/staff';
+    url= 'https://hp-api.herokuapp.com/api/characters/staff';
     carregar(0);
 }
 
 async function filtrarAlunos(event) {
     event.preventDefault();
-    url= 'http://hp-api.herokuapp.com/api/characters/students';
+    url= 'https://hp-api.herokuapp.com/api/characters/students';
     carregar(0);
 }
 
 async function filtrarGryffindor(event) {
     event.preventDefault();
     document.body.setAttribute('data-theme', 't-gryffindor');
-    url= 'http://hp-api.herokuapp.com/api/characters/house/gryffindor';
+    url= 'https://hp-api.herokuapp.com/api/characters/house/gryffindor';
     carregar(0);
 }
 
 async function filtrarSlytherin(event) {
     event.preventDefault();
     document.body.setAttribute('data-theme', 't-slytherin');
-    url= 'http://hp-api.herokuapp.com/api/characters/house/slytherin';
+    url= 'https://hp-api.herokuapp.com/api/characters/house/slytherin';
     carregar(0);
 }
 
 async function filtrarHufflepuff(event) {
     event.preventDefault();
     document.body.setAttribute('data-theme', 't-hufflepuff');
-    url= 'http://hp-api.herokuapp.com/api/characters/house/hufflepuff';
+    url= 'https://hp-api.herokuapp.com/api/characters/house/hufflepuff';
     carregar(0);
 }
 
 async function filtrarRavenclaw(event) {
     event.preventDefault();
     document.body.setAttribute('data-theme', 't-ravenclaw');
-    url= 'http://hp-api.herokuapp.com/api/characters/house/ravenclaw';
+    url= 'https://hp-api.herokuapp.com/api/characters/house/ravenclaw';
     carregar(0);
 }
 
@@ -98,7 +98,7 @@ async function backToTop() {
 
 async function carregarPersonagens(event) {
     event.preventDefault();
-    url= 'http://hp-api.herokuapp.com/api/characters'
+    url= 'https://hp-api.herokuapp.com/api/characters'
     carregar(0);
 }
 
@@ -119,6 +119,7 @@ async function filtrarNome(event) {
 
 function criarDiv(nome, ator, nascimento, corolhos, casa, imagem) {
     let divPai = document.createElement("div");
+    let divContent = document.createElement("div");
     let divImagem = document.createElement("div");
     let divCol2 = document.createElement("div");
     let divPersonagem = document.createElement("div");
@@ -129,7 +130,8 @@ function criarDiv(nome, ator, nascimento, corolhos, casa, imagem) {
     let divOlhos = document.createElement("div");
     let divCasa = document.createElement("div");
 
-    divPai.setAttribute("class", "row p-2 m-2 rounded pai");
+    divPai.setAttribute("class", "col-6 h-100 ")
+    divContent.setAttribute("class", "p-3 m-2 h-100 rounded pai");
     divImagem.setAttribute("class", "col-3");
     divImagem.innerHTML = "<img id=\"myImg\" class=\"miniatura\" src=\"" + imagem + "\" />";
     divCol2.setAttribute("class", "col-9 mt-2");
@@ -145,8 +147,10 @@ function criarDiv(nome, ator, nascimento, corolhos, casa, imagem) {
     divOlhos.innerHTML = "<h5>Cor dos Olhos:</h5>" + corolhos + "";
     divCasa.setAttribute("class", "col-6");
     divCasa.innerHTML = "<h5>Casa:</h5>" + casa + "";
-    divPai.appendChild(divImagem);
-    divPai.appendChild(divCol2);
+
+    divPai.appendChild(divContent);
+    divContent.appendChild(divImagem);
+    divContent.appendChild(divCol2);
     divCol2.appendChild(divPersonagem);
     divCol2.appendChild(divLinha1);
     divCol2.appendChild(divLinha2);
