@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'harry_pregular';
+    src: url('../fonts/harryp-mvz6w-webfont.woff2') format('woff2'),
+         url('../fonts/harryp-mvz6w-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:target{
+    scroll-margin-top: 4.25rem;
+    }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    }
+::-webkit-scrollbar-track {
+    background: var(--dark-color);
+    }
+::-webkit-scrollbar-thumb {
+    background: var(--body-bg);
+    height: 10px;
+    border-radius: 20px;
+    }
+::-webkit-scrollbar-thumb:hover {
+    background: var(--body-color);
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 12px;
+    background-color: var(--secondary-color);
+}
+
+body[data-theme="t-gryffindor"]{
+    --body-bg: #740001 ;
+    --body-color: #AE0001 ;
+    --primary-color: #EEBA30 ;
+    --secondary-color: #D3A625 ;
+    --dark-color: #000000;
+}
+
+body[data-theme="t-slytherin"]{
+    --body-bg: #1A472A ;
+    --body-color: #2A623D ;
+    --primary-color: #AAAAAA ;
+    --secondary-color:  #5D5D5D;
+    --dark-color: #000000;
+}
+
+body[data-theme="t-hufflepuff"]{
+    --body-bg: #382D27 ;
+    --body-color: #726255 ;
+    --primary-color: #ECB939 ;
+    --secondary-color:  #F0C75E;
+    --dark-color: #000000;
+}
+
+body[data-theme="t-ravenclaw"]{
+    --body-bg: #101B3F ;
+    --body-color: #1D2A54 ;
+    --primary-color: #7E7E7E ;
+    --secondary-color: #535354;
+    --dark-color: #000000;
+}
+
+nav{
+    width: 100vw;
+    background-color: var(--body-color);
+    color: var(--primary-color);
+    
+}
+
+header{
+    width: 100vw;
+    background-color: var(--body-bg);
+    
+}
+
+header h1{
+    color: var(--primary-color);
+    font-family: 'harry_pregular', Arial, sans-serif;
+    font-size: 8vh;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;        
+    background-color: var(--body-bg);
+    text-align: center;
+    font-size: 15px;
+    color: var(--secondary-color);
+    z-index: 1000;
+}
+
+footer p{
+    color: var(--primary-color);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+footer a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.back-to-top {
+    background-color: var(--body-bg);
+    border-radius: 65px;
+    bottom: 100px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: var(--secondary-color);
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    width: 40px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 10px;
+  }
+
+button {
+    font-family: 'harry_pregular', Arial, sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 500;
+    padding: 2px !important;
+    color: var(--body-bg) !important;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.8);
+}
+
+input {
+    padding: 10px!important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 14px!important;
+}
+
+label {
+    color: var(--primary-color);
+}
+
+section{
+    margin-bottom: 6rem!important;
+}
+
+.pai{
+    background-color: var(--body-bg);
+    font-size: 2vh;
+    color: var(--primary-color);
+}
+
+.miniatura {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.miniatura:hover {
+    opacity: 0.7;
+}
+
+#dvModal{
+    vertical-align: middle;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    z-index:1100;
+    position: fixed;
+    display: none;
+  }
+  
+  #dvContent{
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  #dvContent img{
+    max-width: 600px;
+    width: 100vw;
+    height: auto;
+  }
+
+
+@media screen and (max-width: 991px) {
+    .imgtopo{
+        display: none !important;
+    }
+    .col-6{
+        width: 100%!important;
+    }
+}
