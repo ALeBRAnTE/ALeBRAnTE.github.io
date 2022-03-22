@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "tads6-web-ii---bimestre-2---trabalho-1-lucas-e-igor",
+  "version": "1.0.0",
+  "description": "Descreva aqui sobre o seu trabalho.",
+  "main": "Arquivo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifpruva/tads6-web-ii---bimestre-2---trabalho-1-lucas-e-igor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifpruva/tads6-web-ii---bimestre-2---trabalho-1-lucas-e-igor/issues"
+  },
+  "homepage": "https://github.com/ifpruva/tads6-web-ii---bimestre-2---trabalho-1-lucas-e-igor#readme",
+  "dependencies": {
+    "formidable": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

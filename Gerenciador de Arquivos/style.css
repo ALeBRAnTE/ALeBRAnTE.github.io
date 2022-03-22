@@ -1,0 +1,37 @@
+:root {
+    --body-bg: #101B3F ;
+    --body-color: #1D2A54 ;
+    --primary-color: #ffffff ;
+    --secondary-color: #535354;
+    --dark-color: #000000;
+}
+.bg-dark, .btn-dark{
+    background-color: var(--body-bg)!important;;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;        
+    background-color: var(--body-bg);
+    text-align: center;
+    font-size: 15px;
+    color: var(--primary-color);
+    z-index: 1000;
+}
+
+footer a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--primary-color);
+    border: 1px var(--dark-color);
+    transition: 1s;
+    text-decoration: none;
+}
+
+footer .footer-bottom{
+    background-color: var(--body-color);
+    padding: 10px;
+}
